@@ -1,14 +1,15 @@
 from fastapi import FastAPI
+from backend.app.core.config import settings
 
 app = FastAPI(
-    title="Enterprise Multi-Agent RAG Platform",
-    version="1.0.0"
+    title=settings.PROJECT_NAME,
+    version=settings.VERSION,
 )
 
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to Enterprise Multi-Agent RAG Platform"
+        "message": f"Welcome to {settings.PROJECT_NAME}"
     }
 
 @app.get("/health")

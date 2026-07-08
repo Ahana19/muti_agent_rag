@@ -24,4 +24,12 @@ Develop a secure multi-agent Retrieval-Augmented Generation (RAG) platform capab
 
 ## Status
 
-🚧 Sprint 0 - Planning
+### Sprint 0
+- Project planning
+- Requirements gathering
+- Documentation
+
+### Sprint 1
+- FastAPI backend
+- Project structure
+- Configuration module
